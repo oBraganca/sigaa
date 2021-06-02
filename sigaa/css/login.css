@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.main-main{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+/*Estilizando Formulario*/
+
+main{
+    width: 100%;
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    opacity: 0.32;
+    pointer-events: none;
+}
+
+
+.container{
+    width: 67%;
+    height: 75%;
+    background-color: cornsilk;
+    display: flex;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+
+.logo{
+    width: 50%;
+    background-color: #A4C8E7;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
+}
+
+.logo .menu-opc{
+    width: 50%;
+    height: 15%;
+    border: 1px solid grey;
+    background: linear-gradient(45deg,rgb(238, 237, 237), white);
+    margin: 2%;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo .menu-opc a{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo .menu-opc:hover{
+    background: linear-gradient(45deg,#fff2b2,#fff6cc);
+}
+
+.comp{
+    margin-top: 5px;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+
+.comp img{
+    width: 25px;
+}
+
+
+
+.content{
+    width: 50%;
+    background-color: whitesmoke;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 20px 20px 0;
+    opacity: 16;
+}
+
+.content div img{
+    width: 70px;
+}
+
+
+
+.content form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content form .inp-cls{
+    border-radius: 15px;
+    margin: 4%;
+    border: grey 1px solid;
+    width: 270px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    background-color: #ddd;
+}
+
+.content form input{
+    width: 350px;
+    background-color: #ddd;
+    border: grey 1px none;
+    padding: 4%;
+    border-radius: 15px;
+    
+}
+.content form div i{
+    color: grey;
+    
+}
+
+.icon-input{
+    display: flex;
+    position: absolute
+}
+
+.content form input:focus{
+    outline: none;
+}
+
+.content form button{
+    width: 150px;
+    padding: 3%;
+    border: solid 1px grey;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.content form button:hover{
+    transition: 0.5s;
+    color:white;
+    background-color: #A4C8E7;
+    border: solid 1px black;
+}
+
+.recall-acct{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.recall-acct div a{
+    color: #1d3557;
+}
+
+
+.recall-acct div {
+    padding: 5px;
+}
+/*Fim estilizando Formulario*/
+
+
+/*Formatando popup*/
+
+.popup-box{
+    width: 45%;
+    height: 380px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+
+.popup-box .close{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content:flex-end;
+    padding: 2px;
+    padding-right: 10px;
+    background-color: grey;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.popup-box .close i {
+    font-size: 30pt;
+    cursor: pointer;
+}
+
+.popup-content{
+    height: 88%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: seashell;
+}
+
+.popup-content p{
+    font-size: 15pt;
+}
+
+.warning{
+    height: 45%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.warning p {
+    padding: 0 4px 0 6px ;
+    color: slategray;
+}
+
+.warning i {
+    color:red;
+    font-size: 15pt;
+}
+
+
+.popup-content .warning-content{
+    width: 70%;
+    height: 55%;
+}
+
+.popup-content .warning-content{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.close-popup{
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.open-form{
+    opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
+}
+/*Fim popup*/
